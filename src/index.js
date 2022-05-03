@@ -1,1 +1,2 @@
-console.log(hello);
+import "./style.scss";
+import "./index.pug";

@@ -9,6 +9,35 @@ html(lang="en")
         title= pageTitle
     body
         include modules/header/header
+        main.main-page
+            .wrapper
+                //- img(class="banner_img" src="./img/image_3.jpg", alt="")
+                .banner 
+                    .banner__list
+                        h1.banner__title Найдём номера под <br> ваши пожелания
+                        .banner__date
+                            .banner__arrival
+                                label(for="date") Прибытие
+                                input(type="date" id="date" name="date")
+                            .banner__departure
+                                label(for="date") Выезд
+                                input(type="date" id="date" name="date")
+                        .banner__guests
+                            label Гости 
+                            select.banner__select 
+                                option.banner__option(disabled selected) Сколько гостей
+                        .banner__btn
+                            a(href="/" class="banner__btn-selection") Подобрать номер
+            
+
+
+
+            
+            
+        
+            
+
+        
         
 
 

@@ -1,89 +1,163 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 body {
+    font-family: Montserrat;
     font-size: 14px;
+    margin: 0;
+    padding: 0;
 }
+
 .header {
     display: flex;
     justify-content: space-between;
-    max-width: 1440px;
-    padding-left: 140px;
-    padding-right: 140px;
+    width: 1440px;
     height: 70px;
-    margin: 0 auto;
     align-items: center;
 }
-.logo {
-    width: 105.69px;
-    height: 40px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
+
 .header {
-    &__logo {
-        flex: 1;
+&__logo {
+    flex: 1;
     }
-
-    &__nav-menu {
-        display: flex;
-        flex: 0;
-        list-style-type: none;
-        margin-right: 23px;
+&__nav-menu {
+    display: flex;
+    flex: 0;
+    list-style-type: none;
+    margin-right: 23px;
     }
-    &__nav-link {
-        text-decoration: none;
-        margin-left: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        white-space: nowrap;
-
-        &-arrow {
-            height: 24px;
-            width: 24px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+&__nav-link {
+    text-decoration: none;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+&-arrow {
+    height: 24px;
+    width: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
         }
     }
-
-    &__nav-item {
-        display: flex;
-        color: #1F2041;
-        opacity: 0.5;
+&__nav-item {
+    display: flex;
+    color: #1F2041;
+    opacity: 0.5;
+    }
+&__btn-enter {
+    color: #BC9CFF;
+    display: flex;
+    width: 87px;
+    height: 34px;
+    border: 2px solid #BC9CFF;
+    border-radius: 22px;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    }
+&__btn-register {
+    color: #fff;
+    display: flex;
+    width: 196px;
+    height: 34px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 140px;
     }
 
-    &__btn-enter {
-       color: #BC9CFF;
-       display: flex;
-       width: 87px;
-       height: 34px;
-       border: 2px solid #BC9CFF;
-       border-radius: 22px;
-       align-items: center;
-       justify-content: center;
-       text-transform: uppercase;
-       font-size: 12px;
-       font-weight: 700;
-       text-decoration: none;
-    }
-    &__btn-register {
-        color: #fff;
-       display: flex;
-       width: 196px;
-       height: 34px;
-       background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-       border-radius: 22px;
-       align-items: center;
-       justify-content: center;
-       text-transform: uppercase;
-       font-size: 12px;
-       font-weight: 700;
-       text-decoration: none;
-       margin-left: 20px;
-    }
-
-    &__auth-buttons {
-        display: flex;
+&__auth-buttons {
+    display: flex;
+    max-width: 100%;
     }
 }
+.main-page {
+    
+    background: url('./img/image_3.jpg');
+    
+    min-height: 1022px;
+    background-repeat: round;
+    padding-top: 70px;
+}
+.banner {
+    width: 380px;
+    height: 374px;
+    background: #fff;
+    border: 1px solid #0000001F;
+    border-radius: 4px;
+    box-shadow: 0px 0px 25px 0px #00000033;
+    
+  &__list {
+    position: absolute;
+    margin-left: 30px;
+  }
+  &__title {
+    margin-top: 40px;
+  }
+  &__date {
+      
+    display: flex;
+    
+    margin-right: 30px;
+    margin-top: 21px;
+  }
+  &__date input {
+    display: block;
+    margin-right: 20px;
+    width: 150px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 11.5px 32px 8px 15px;
+    color: #1F2041;
+  }  
+  &__date label {  
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+&__guests {
+       
+    margin-top: 20.5px;
+  }
+  &__guests select {
+    display: block;
+    width: 320px;
+    height: 44px;
+    border: 1px solid #1F2041;
+    border-radius: 4px;
+    padding: 12.5px 0px 13.5px 15px; 
+    font-size: 14px;
+    color: #1F2041; 
+  } 
+  &__guests label {
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+  }  
+  &__btn a{
+     margin-top: 31px;
+     display: flex;
+     color: #fff;
+     width: 320px;
+     height: 44px;
+     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+     border-radius: 22px;
+     align-items: center;
+     justify-content: center;
+     text-decoration: none;
+     text-transform: uppercase;
+    }
+  }
